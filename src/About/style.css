@@ -1,0 +1,13 @@
+h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-header {
+    text-align: center;
+}
+
+.bio-container {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+}
