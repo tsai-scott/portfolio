@@ -1,11 +1,3 @@
-.container > div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2em;
-    color: #ffeead;
-}
-
 .portfolio-image {
     width: 100%;
     height: 100%;
