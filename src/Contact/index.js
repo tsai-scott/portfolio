@@ -4,9 +4,13 @@ import "./style.css";
 export default class Contact extends Component {
   render() {
     return (
-      <div>
-         <h1 className="email">Email: scotttsai2011@gmail.com</h1>
-      </div>
+      <form className="form-container" method="POST" action="https://formspree.io/scotttsai2011@gmail.com">
+        <input className="your-email" type="email" name="email" placeholder="Your email" />
+        <br></br>
+        <textarea className="your-message" name="message" placeholder="Your message"></textarea>
+        <br></br>
+        <button type="submit">Send</button>
+      </form>
     )
   }
 }

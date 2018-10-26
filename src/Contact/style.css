@@ -1,3 +1,21 @@
-.email {
+.form-container {
     text-align: center;
+    width: 700px;
+    margin: 0 auto;
+}
+
+.your-email {
+    font-size: 18px;
+    border: 2px solid #000000;
+    width: 300px;
+    height: 30px;
+    margin-bottom: 10px;
+    
+}
+
+.your-message {
+    font-size: 18px;
+    border: 2px solid #000000;
+    width: 300px;
+    height: 300px;
 }
