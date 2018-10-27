@@ -1,52 +1,86 @@
-/* .portfolio-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-} */
-
-h3 {
-    font-family: 'Libre Baskerville', serif;
-    font-size: 50px;
-    margin-bottom: 1%;
-}
-
 a {
     text-decoration: none;
     color: black;
 }
 
-.portfolio-link:hover {
+.portfolio-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.portfolio-item {
+    
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    height: 100vh;
+}
+
+.portfolio-text-container {
+    height: 40%;
+    position: relative;
+}
+.portfolio-title-container {
+    width: 80%;
+    padding-top: 40px;
+    margin: 0 auto;
+
+}
+
+.portfolio-item-title {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: left;   
+    margin: 0;
+}
+
+.portfolio-item:hover {
   opacity: .5;
   transition: .4s;
 }
 
-.container {
+
+
+.portfolio-item-description {
+    position: absolute;
+    display: block;
     width: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-
-
-    /* width: 80%;
-    margin: 0 auto;
-    display: grid;
-    grid-gap: 5px;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-auto-rows: 75px;
-    grid-auto-flow: dense; */
+    margin-left: 10%;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 18px;
+    font-style: italic;
+    bottom: 50px;
+    
 }
 
-/* .vertical {
-    grid-row: span 4;
-    grid-row: span 4;
+.portfolio-image-container {
+   
+    height: 60%;
 }
 
-.big {
-    grid-column: span 4;
-    grid-row: span 4;
+.portfolio-background-bumpin {
+    background-color: #55B6CC;
+    width: 100%;
+    height: 100%;
 }
 
-.big:hover {
-    opacity: 0.3;
-    transition: 0.3s;
-} */
+.portfolio-background-collector {
+    background-color: #476D4F;
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio-background-rememberme {
+    background-color: #F99F34;
+    width: 100%;
+    height: 100%;
+}
+.portfolio-background-gearshare {
+    background-color: #F2DEC6;
+    width: 100%;
+    height: 100%;
+}
+
+

@@ -1,6 +1,13 @@
 * {
-    background-color: #FCF7E8;
+    background-color: #F7F7F7;
+    box-sizing: border-box;
 }
+
+body {
+    margin: 0;
+}
+
+
 
 .App {
     background-size: cover;
@@ -8,7 +15,6 @@
 }
 
 header {
-    height: 200px;
     position: relative;
 }
 
@@ -23,44 +29,77 @@ h1 {
     margin-bottom: 50px;
 }
 
-.logo {
-    display: block;
-    margin: 0 auto;
-    width: 10%; 
+.logo-container {
+    display: flex;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    width: 80px; 
+    height: 80px;
+    grid-area: l;
 }
 
 .logo-image {
     display: block;
-    margin: 0 auto;
-    width: 5%;
+    
+    width: 40px;
+    
+}
+
+.app-container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    grid-template-areas: 
+        "l l l n"
+        "c c c c"
+        "c c c c"
+        "c c c c"
+        "c c c c"
+        "c c c c"
+        "c c c c"
+        "c c c c"
+        "c c c c"
+        "c c c c"
+        "c c c c";
 }
 
 .nav-container {
+    grid-area: n;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
-    position: absolute;
-    bottom: 0;
-    right: 100px;
+    align-items: center;
+    height: 80px;
+    
+    
 }
 
 .nav {
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
+    height: 80px;
     letter-spacing: 1px;
     font-weight: 600;
     font-size: 18px;
     color: black;
     display: flex;
     width: 150px;
-    height: 100px;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    transition: .5s;
+    
 }
 
 .nav:hover {
-    text-decoration: underline;
+    border-bottom: 1px solid black;
+    transition: 0.5s;
     
+}
+
+.content {
+    grid-area: c;
 }

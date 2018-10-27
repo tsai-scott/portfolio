@@ -27,20 +27,21 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div>
-        {/* <div className="App" style={backgoundImage: `url(${this.state.backgroundImg})`> */}
+        <div className="app-container">
+          {/* <div className="App" style={backgoundImage: `url(${this.state.backgroundImg})`> */}
+          <div className="logo-container"><img className="logo-image" src="https://i.imgur.com/OvUifPZ.png" /></div>
           <header>
-            <div className="logo-container"><img className="logo-image" src="https://i.imgur.com/OvUifPZ.png" /></div>
-            
             <nav className="nav-container">
               <Link className="nav" to="/">Portfolio</Link>
               <Link className="nav" to="/about">About Me</Link>
               <Link className="nav" to="/contact">Contact</Link>
             </nav>
           </header>
-          <Route path="/" exact component={Portfolio} />
-          <Route path="/about" exact component={About} />
-          <Route path="/contact" exact component={Contact} />
+          <div className="content">
+            <Route path="/" exact component={Portfolio} />
+            <Route path="/about" exact component={About} />
+            <Route path="/contact" exact component={Contact} />
+          </div>
         </div>
       </Router>
     );
