@@ -14,8 +14,13 @@ body {
     background-position: center;
 }
 
-header {
+.header {
+    display: flex;
+    grid-area: n;
+    justify-content: space-between;
     position: relative;
+    border-bottom: 2px solid black;
+
 }
 
 h1 {
@@ -43,10 +48,8 @@ h1 {
 }
 
 .logo-image {
-    display: block;
-    
-    width: 40px;
-    
+    display: block;   
+    width: 40px;    
 }
 
 .app-container {
@@ -55,7 +58,7 @@ h1 {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(11, 1fr);
     grid-template-areas: 
-        "l l l n"
+        "n n n n"
         "c c c c"
         "c c c c"
         "c c c c"
@@ -69,7 +72,7 @@ h1 {
 }
 
 .nav-container {
-    grid-area: n;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -96,7 +99,8 @@ h1 {
 
 .nav:hover {
     border-bottom: 1px solid black;
-    transition: 0.5s;
+    opacity: .7;
+    transition: 0.3s;
     
 }
 

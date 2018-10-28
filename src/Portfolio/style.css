@@ -12,7 +12,7 @@ a {
 .portfolio-item {
     
     border-right: 2px solid black;
-    border-top: 2px solid black;
+    /* border-top: 2px solid black; */
     border-bottom: 2px solid black;
     height: 100vh;
 }
@@ -37,8 +37,8 @@ a {
 }
 
 .portfolio-item:hover {
-  opacity: .5;
-  transition: .4s;
+  opacity: .7;
+  transition: .3s;
 }
 
 
