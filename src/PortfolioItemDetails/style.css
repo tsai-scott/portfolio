@@ -1,0 +1,27 @@
+.details-container {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 80px;
+    width: 1170px;  
+}
+
+.details-name {
+    font-size: 80px;
+    margin-bottom: 80px;
+    margin-top: 0;
+}
+
+.details-technologies {   
+    font-size: 24px;
+    font-style: italic;
+}
+
+.details-description {
+    width: 700px;
+    font-size: 18px;
+    opacity: .7;
+}
+
+.details-link {
+    
+}

@@ -10,9 +10,7 @@ a {
 }
 
 .portfolio-item {
-    
     border-right: 2px solid black;
-    /* border-top: 2px solid black; */
     border-bottom: 2px solid black;
     height: 100vh;
 }
@@ -41,8 +39,6 @@ a {
   transition: .3s;
 }
 
-
-
 .portfolio-item-description {
     position: absolute;
     display: block;
@@ -51,8 +47,7 @@ a {
     font-family: 'Libre Baskerville', serif;
     font-size: 18px;
     font-style: italic;
-    bottom: 50px;
-    
+    bottom: 50px;    
 }
 
 .portfolio-image-container {
