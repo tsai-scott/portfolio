@@ -1,29 +1,43 @@
 
-
-h2 {
-    font-family: 'Libre Baskerville', serif;
-}
-
-p {
-    line-height: 2;
-}
-
-.about-header {
-    text-align: center;
-}
-
 .bio-container {
-    display: flex;
-    width: 400px;
+    width: 1000px;
     margin: 0 auto;
+    margin-top: 100px;   
 }
 
-.headshot-container {
-    width: 15%;
-    margin: 0 auto;
+.headshot-image {  
+    width: 100%;   
 }
 
-.headshot-image {
-    width: 100%;
-    border-radius: 10%;
+@media (max-width: 1000px) {
+    .bio-container {
+        width: 90%;  
+    }
+}
+
+@media (min-width: 600px) {
+
+    .headshot-image-mobile {
+        display: none;
+        width: 100%;   
+    }
+}
+
+@media (max-width: 600px) {
+    .bio-container {
+        width: 90%;
+        
+        margin: 0 auto;
+        margin-top: 20px;
+        
+    }
+
+    .headshot-image-mobile {
+      
+        width: 100%;   
+    }
+
+    .headshot-image {   
+        display: none;       
+    }
 }

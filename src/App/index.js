@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import Home from "../Home";
 import Portfolio from "../Portfolio";
 import PortfolioItem from "../PortfolioItem";
 import PortfolioItemDetails from "../PortfolioItemDetails";
 import About from "../About";
 import Contact from "../Contact";
+import Favicon from 'react-favicon';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 
@@ -24,11 +24,11 @@ class App extends Component {
           technologies: "Javascript",
           link: "https://vigilant-beaver-4f448a.netlify.com/",
           backgroundColorClass: "portfolio-background-bumpin",
-          description: "A fun, retro, arcade style, javascript game. Merge with other bubbles to grow, and avoid being popped the spikey objects. Beware of new obstacles that appear as you progress through the levels. I also composed the background music!"
+          description: "A fun, retro, arcade style, javascript game. Merge with other bubbles to grow, and avoid being popped by the spikey objects. Beware of new obstacles that appear as you progress through the levels. I also composed the background music!"
         },
         {
           id: 2,
-          name: "Guitar Collector App",
+          name: "Guitar Collector",
           technologies: "React",
           link: "https://guitar-collection-app.herokuapp.com/",
           backgroundColorClass: "portfolio-background-collector",
@@ -63,20 +63,14 @@ class App extends Component {
     })
   }
 
-
-  // setBackgroundImg = (backgroundImg) => {
-  //   this.setState{ backgroundImg }
-  // }
-
-
-
   render() {
     return (
       <Router>
         <div className="app-container">
+        <Favicon url="/images/Scott-tsai-logo.png" />
           {/* <div className="App" style={backgoundImage: `url(${this.state.backgroundImg})`> */}
           <div className="header">
-            <div className="logo-container"><img className="logo-image" src="https://i.imgur.com/OvUifPZ.png" /></div>
+            <Link to="/" className="logo-container"><img className="logo-image" src="/images/Scott-tsai-logo.png" /></Link>
             <nav className="nav-container">
               <Link className="nav" to="/">Portfolio</Link>
               <Link className="nav" to="/about">About Me</Link>
@@ -84,8 +78,7 @@ class App extends Component {
             </nav>
           </div>
           <div className="content">
-
-            
+      
             <Route
               exact path="/"
               render={(props) => <Portfolio {...props} projects={this.state.projects} setDetailsPage={this.setDetailsPage} />}

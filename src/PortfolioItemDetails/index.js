@@ -20,7 +20,7 @@ export default class PortfolioItemDetails extends Component {
                     <p >{this.props.currentProject.description}</p>
                 </div>
 
-                <a className="details-link" target="_blank" href={this.props.currentProject.link}>See the app</a>
+                <button className="details-link"><a target="_blank" href={this.props.currentProject.link}>See the app</a></button>
 
                 <div>
                     <img></img>

@@ -9,7 +9,7 @@ export default class Contact extends Component {
         <br></br>
         <textarea className="your-message" name="message" placeholder="Your message"></textarea>
         <br></br>
-        <button type="submit">Send</button>
+        <button className="contact-submit-button" type="submit">Send</button>
       </form>
     )
   }

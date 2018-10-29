@@ -3,13 +3,11 @@ import { BrowserRouter as Router, Route, Link, Redirect } from 'react-router-dom
 import "./style.css";
 
 export default class PortfolioItem extends Component {
-    
-
-    
+ 
   render() {
     return (
-        <div className="portfolio-item" onClick={() => this.props.setDetailsPage(this.props.id)}>
-        <Link to={'/projectdetail/' + this.props.id} >
+        <Link to={'/projectdetail/' + this.props.id} className="portfolio-item" onClick={() => this.props.setDetailsPage(this.props.id)}>
+        
           <div className="portfolio-text-container">
 
             <div className="portfolio-title-container">
@@ -27,8 +25,8 @@ export default class PortfolioItem extends Component {
 
             </div>
           </div>
-        </Link>
-      </div>
+        
+      </Link>
     )
   }
 }
